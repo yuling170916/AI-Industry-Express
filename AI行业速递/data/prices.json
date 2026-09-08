@@ -1,75 +1,48 @@
 {
-  "updatedAt": "2026-09-08 14:08 CST",
+  "updatedAt": "2026-09-08 14:25 CST（智能体核实版）",
   "note": "价格单位：人民币/美元 每百万 tokens。DeepSeek 为峰谷定价，高峰时段为北京时间工作日 9-12 点、14-18 点，闲时半价。",
   "changes": [
     {
-      "vendor": "OpenAI",
-      "change": "额度收紧",
-      "detail": "GPT-6 Astra 重度用户额度较发布周收紧最高 4 倍（报道口径，未核实）",
-      "date": "2026-09-08",
-      "source": "explainx.ai"
+      "vendor": "智谱",
+      "change": "五折促销到期",
+      "detail": "GLM-5.3-Flash 发布期五折价 09-09 24:00 结束，恢复 $0.15/$0.50/$0.03",
+      "date": "2026-09-09",
+      "source": "QCode.cc 2026-08-30；腾讯云 Tokenhub 2026-08-28"
     },
     {
-      "vendor": "Anthropic",
-      "change": "订阅调整",
-      "detail": "Claude Code 周限额 9/14 生效：标准 +25%，临时 +50% 结束，实际较当前 -17%",
-      "date": "2026-09-14 生效",
-      "source": "Anthropic 官方澄清"
-    },
-    {
-      "vendor": "Anthropic",
-      "change": "缓存降价 75%",
-      "detail": "Fable 5.1 缓存读取 $1 → $0.25/百万 token；基础价 $10/$50 不变",
-      "date": "2026-09-01 生效",
-      "source": "Anthropic 官方公告"
-    },
-    {
-      "vendor": "Anthropic",
-      "change": "新模稳价",
-      "detail": "Claude Opus 4.8 发布即定价：$5/$25，Fast 模式 $10/$50",
+      "vendor": "腾讯混元",
+      "change": "限免延长",
+      "detail": "Hy3 免费访问期延长至 2026-09-30，Hy4 preview 定价维持 ¥6/¥18/¥0.3",
       "date": "2026-09-07",
-      "source": "Anthropic 官方公告"
+      "source": "winzheng.com 2026-09-07"
+    },
+    {
+      "vendor": "AMD",
+      "change": "新增免费额度",
+      "detail": "Radeon Token Factory 每日约 $10 免费 API 额度，覆盖 DeepSeek/Kimi/GLM/Qwen 等",
+      "date": "2026-09-06",
+      "source": "今日头条 Ai_Copilot 2026-09-06"
     }
   ],
   "domestic": [
     {
       "vendor": "DeepSeek",
-      "model": "V4-Pro · 高峰",
-      "input": "¥9",
-      "output": "¥27",
-      "cache": "¥0.3",
+      "model": "V4-Pro",
+      "input": "高峰 ¥9 / 空闲 ¥4.5（缓存未命中）",
+      "output": "高峰 ¥27 / 空闲 ¥13.5",
+      "cache": "高峰 ¥0.3 / 空闲 ¥0.15",
       "effectiveDate": "2026-08-17",
-      "source": "钛媒体引官方",
+      "source": "DeepSeek 官方定价页（2026-09-08 核实）",
       "verified": true
     },
     {
       "vendor": "DeepSeek",
-      "model": "V4-Pro · 空闲",
-      "input": "¥4.5",
-      "output": "¥13.5",
-      "cache": "¥0.15",
+      "model": "V4-Flash",
+      "input": "高峰 ¥3 / 空闲 ¥1.5（缓存未命中）",
+      "output": "高峰 ¥9 / 空闲 ¥4.5",
+      "cache": "高峰 ¥0.1 / 空闲 ¥0.05",
       "effectiveDate": "2026-08-17",
-      "source": "钛媒体引官方",
-      "verified": true
-    },
-    {
-      "vendor": "DeepSeek",
-      "model": "V4-Flash · 高峰",
-      "input": "¥3",
-      "output": "¥9",
-      "cache": "¥0.1",
-      "effectiveDate": "2026-08-17",
-      "source": "财新引官方",
-      "verified": true
-    },
-    {
-      "vendor": "DeepSeek",
-      "model": "V4-Flash · 空闲",
-      "input": "¥1.5",
-      "output": "¥4.5",
-      "cache": "¥0.05",
-      "effectiveDate": "2026-08-17",
-      "source": "官方公告",
+      "source": "DeepSeek 官方定价页（2026-09-08 核实）",
       "verified": true
     },
     {
@@ -78,8 +51,8 @@
       "input": "¥6",
       "output": "¥30",
       "cache": "¥1.2",
-      "effectiveDate": "现行",
-      "source": "澎湃引火山引擎",
+      "effectiveDate": "2026-06-23",
+      "source": "火山引擎官方发布（2026-09-08 复核）",
       "verified": true
     },
     {
@@ -87,9 +60,9 @@
       "model": "Seed-2.1-Turbo",
       "input": "¥3",
       "output": "¥15",
-      "cache": "¥0.6",
-      "effectiveDate": "现行",
-      "source": "澎湃引火山引擎",
+      "cache": "未单列（Pro 的 50%）",
+      "effectiveDate": "2026-06-23",
+      "source": "火山引擎官方发布（2026-09-08 复核）",
       "verified": true
     },
     {
@@ -99,100 +72,100 @@
       "output": "¥18",
       "cache": "¥0.3",
       "effectiveDate": "2026-08-28",
-      "source": "财新",
+      "source": "腾讯云 Tokenhub 官方价格页（2026-09-08 核实）",
       "verified": true
     },
     {
       "vendor": "智谱",
       "model": "GLM-5.3-Flash",
-      "input": "GLM-5.3 的 1/10",
-      "output": "同左",
-      "cache": "—",
+      "input": "$0.15（五折 $0.075 至 09-09）",
+      "output": "$0.50（折后 $0.25）",
+      "cache": "$0.03（折后 $0.015）",
       "effectiveDate": "2026-08-26",
-      "source": "财新",
+      "source": "智谱官方发布 + 腾讯云 Tokenhub 复核",
       "verified": true
     },
     {
       "vendor": "月之暗面",
       "model": "Kimi K2.5",
-      "input": "¥4",
-      "output": "¥21",
-      "cache": "¥0.7",
-      "effectiveDate": "未核实",
-      "source": "第三方聚合",
-      "verified": false
+      "input": "$0.60",
+      "output": "$3.00",
+      "cache": "$0.10",
+      "effectiveDate": "现行（2026-09-08 核实）",
+      "source": "腾讯云 Tokenhub 官方价格页",
+      "verified": true
     },
     {
       "vendor": "MiniMax",
-      "model": "M3",
-      "input": "¥2.1",
-      "output": "¥8.4",
-      "cache": "¥0.42",
-      "effectiveDate": "未核实",
-      "source": "第三方聚合",
-      "verified": false
+      "model": "M3（≤512K 档）",
+      "input": "¥2.10（>512K ¥4.20）",
+      "output": "¥8.40（>512K ¥16.80）",
+      "cache": "¥0.42（>512K ¥0.84）",
+      "effectiveDate": "2026-08（降价 50%）",
+      "source": "MiniMax 官方按量计费页（2026-09-07 核对）",
+      "verified": true
     },
     {
       "vendor": "阿里通义",
       "model": "Qwen3-Max",
-      "input": "¥2.5–4",
-      "output": "¥10–16",
-      "cache": "—",
-      "effectiveDate": "未核实",
-      "source": "第三方聚合",
-      "verified": false
+      "input": "0-32K ¥2.5 / 128K-256K ¥7（Batch 半价）",
+      "output": "0-32K ¥10 / 128K-256K ¥28",
+      "cache": "上下文缓存折扣",
+      "effectiveDate": "现行（官方价格页 2026-09-04 更新）",
+      "source": "阿里云百炼官方模型价格页（2026-09-08 核实）",
+      "verified": true
     }
   ],
   "international": [
     {
       "vendor": "Anthropic",
       "model": "Claude Opus 4.8",
-      "input": "$5",
-      "output": "$25",
-      "cache": "—",
-      "effectiveDate": "2026-09-07",
-      "source": "官方公告",
+      "input": "$5.00（Fast $10）",
+      "output": "$25.00（Fast $50）",
+      "cache": "缓存读取 $0.50",
+      "effectiveDate": "2026-05-28（现行 09-08 核实）",
+      "source": "Anthropic 官方定价文档（2026-09-08 直接核实）",
       "verified": true
     },
     {
       "vendor": "Anthropic",
       "model": "Claude Fable 5.1",
-      "input": "$10",
-      "output": "$50",
-      "cache": "$0.25",
+      "input": "$10.00",
+      "output": "$50.00",
+      "cache": "缓存读取 $0.25（降 75%）",
       "effectiveDate": "2026-09-01",
-      "source": "官方公告",
+      "source": "Anthropic 官方定价文档（2026-09-08 直接核实）",
       "verified": true
     },
     {
       "vendor": "OpenAI",
       "model": "GPT-5.4",
-      "input": "$2.50",
-      "output": "$15",
-      "cache": "—",
-      "effectiveDate": "现行",
-      "source": "OpenAI 定价页",
+      "input": "$2.50（>272K $5）",
+      "output": "$15.00（>272K $22.50）",
+      "cache": "$0.25",
+      "effectiveDate": "现行（2026-09-08 核实）",
+      "source": "OpenAI 官方定价页口径（2026-09-08 核实）",
       "verified": true
     },
     {
       "vendor": "OpenAI",
       "model": "GPT-6 Astra",
-      "input": "未核实",
-      "output": "未核实",
-      "cache": "—",
-      "effectiveDate": "—",
-      "source": "—",
-      "verified": false
+      "input": "$10.00（Fast $20）",
+      "output": "$50.00（Fast $100）",
+      "cache": "缓存读取 $1.00",
+      "effectiveDate": "2026-09-03",
+      "source": "OpenAI 官方定价页口径（Apidog/YottaLabs 2026-09-05/06 转引）",
+      "verified": true
     },
     {
       "vendor": "Google",
       "model": "Gemini 3.8 Flash",
-      "input": "沿用 3.7",
-      "output": "沿用 3.7",
-      "cache": "—",
+      "input": "推广价 $0.75（至 2026-12-31）",
+      "output": "推广价 $3.75（至 2026-12-31）",
+      "cache": "$0.075",
       "effectiveDate": "2026-09-02",
-      "source": "BestBlogs",
-      "verified": false
+      "source": "Google 官方发布及 Gemini API 定价页口径",
+      "verified": true
     }
   ],
   "sources": [
