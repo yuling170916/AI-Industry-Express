@@ -1,0 +1,43 @@
+name: daily-price-tracker
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # UTC 00:00 = 北京时间每天 8:00
+  workflow_dispatch:        # 允许手动触发
+  push:
+    paths:
+      - "AI行业速递/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 抓取官方定价页状态
+        run: python "AI行业速递/scripts/fetch_prices.py"
+
+      - name: 构建静态站点
+        run: python "AI行业速递/scripts/build_site.py"
+
+      - name: 回写价格数据到 main 分支
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "AI行业速递/data/prices.json"
+          git commit -m "chore(data): daily price refresh [skip ci]" || true
+          git push || true
+
+      - name: 发布到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false

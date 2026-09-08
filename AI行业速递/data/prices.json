@@ -1,0 +1,263 @@
+{
+  "updatedAt": "2026-09-08 14:01 CST",
+  "note": "价格单位：人民币/美元 每百万 tokens。DeepSeek 为峰谷定价，高峰时段为北京时间工作日 9-12 点、14-18 点，闲时半价。",
+  "changes": [
+    {
+      "vendor": "OpenAI",
+      "change": "额度收紧",
+      "detail": "GPT-6 Astra 重度用户额度较发布周收紧最高 4 倍（报道口径，未核实）",
+      "date": "2026-09-08",
+      "source": "explainx.ai"
+    },
+    {
+      "vendor": "Anthropic",
+      "change": "订阅调整",
+      "detail": "Claude Code 周限额 9/14 生效：标准 +25%，临时 +50% 结束，实际较当前 -17%",
+      "date": "2026-09-14 生效",
+      "source": "Anthropic 官方澄清"
+    },
+    {
+      "vendor": "Anthropic",
+      "change": "缓存降价 75%",
+      "detail": "Fable 5.1 缓存读取 $1 → $0.25/百万 token；基础价 $10/$50 不变",
+      "date": "2026-09-01 生效",
+      "source": "Anthropic 官方公告"
+    },
+    {
+      "vendor": "Anthropic",
+      "change": "新模稳价",
+      "detail": "Claude Opus 4.8 发布即定价：$5/$25，Fast 模式 $10/$50",
+      "date": "2026-09-07",
+      "source": "Anthropic 官方公告"
+    }
+  ],
+  "domestic": [
+    {
+      "vendor": "DeepSeek",
+      "model": "V4-Pro · 高峰",
+      "input": "¥9",
+      "output": "¥27",
+      "cache": "¥0.3",
+      "effectiveDate": "2026-08-17",
+      "source": "钛媒体引官方",
+      "verified": true
+    },
+    {
+      "vendor": "DeepSeek",
+      "model": "V4-Pro · 空闲",
+      "input": "¥4.5",
+      "output": "¥13.5",
+      "cache": "¥0.15",
+      "effectiveDate": "2026-08-17",
+      "source": "钛媒体引官方",
+      "verified": true
+    },
+    {
+      "vendor": "DeepSeek",
+      "model": "V4-Flash · 高峰",
+      "input": "¥3",
+      "output": "¥9",
+      "cache": "¥0.1",
+      "effectiveDate": "2026-08-17",
+      "source": "财新引官方",
+      "verified": true
+    },
+    {
+      "vendor": "DeepSeek",
+      "model": "V4-Flash · 空闲",
+      "input": "¥1.5",
+      "output": "¥4.5",
+      "cache": "¥0.05",
+      "effectiveDate": "2026-08-17",
+      "source": "官方公告",
+      "verified": true
+    },
+    {
+      "vendor": "字节豆包",
+      "model": "Seed-2.1-Pro",
+      "input": "¥6",
+      "output": "¥30",
+      "cache": "¥1.2",
+      "effectiveDate": "现行",
+      "source": "澎湃引火山引擎",
+      "verified": true
+    },
+    {
+      "vendor": "字节豆包",
+      "model": "Seed-2.1-Turbo",
+      "input": "¥3",
+      "output": "¥15",
+      "cache": "¥0.6",
+      "effectiveDate": "现行",
+      "source": "澎湃引火山引擎",
+      "verified": true
+    },
+    {
+      "vendor": "腾讯混元",
+      "model": "Hy4 preview",
+      "input": "¥6",
+      "output": "¥18",
+      "cache": "¥0.3",
+      "effectiveDate": "2026-08-28",
+      "source": "财新",
+      "verified": true
+    },
+    {
+      "vendor": "智谱",
+      "model": "GLM-5.3-Flash",
+      "input": "GLM-5.3 的 1/10",
+      "output": "同左",
+      "cache": "—",
+      "effectiveDate": "2026-08-26",
+      "source": "财新",
+      "verified": true
+    },
+    {
+      "vendor": "月之暗面",
+      "model": "Kimi K2.5",
+      "input": "¥4",
+      "output": "¥21",
+      "cache": "¥0.7",
+      "effectiveDate": "未核实",
+      "source": "第三方聚合",
+      "verified": false
+    },
+    {
+      "vendor": "MiniMax",
+      "model": "M3",
+      "input": "¥2.1",
+      "output": "¥8.4",
+      "cache": "¥0.42",
+      "effectiveDate": "未核实",
+      "source": "第三方聚合",
+      "verified": false
+    },
+    {
+      "vendor": "阿里通义",
+      "model": "Qwen3-Max",
+      "input": "¥2.5–4",
+      "output": "¥10–16",
+      "cache": "—",
+      "effectiveDate": "未核实",
+      "source": "第三方聚合",
+      "verified": false
+    }
+  ],
+  "international": [
+    {
+      "vendor": "Anthropic",
+      "model": "Claude Opus 4.8",
+      "input": "$5",
+      "output": "$25",
+      "cache": "—",
+      "effectiveDate": "2026-09-07",
+      "source": "官方公告",
+      "verified": true
+    },
+    {
+      "vendor": "Anthropic",
+      "model": "Claude Fable 5.1",
+      "input": "$10",
+      "output": "$50",
+      "cache": "$0.25",
+      "effectiveDate": "2026-09-01",
+      "source": "官方公告",
+      "verified": true
+    },
+    {
+      "vendor": "OpenAI",
+      "model": "GPT-5.4",
+      "input": "$2.50",
+      "output": "$15",
+      "cache": "—",
+      "effectiveDate": "现行",
+      "source": "OpenAI 定价页",
+      "verified": true
+    },
+    {
+      "vendor": "OpenAI",
+      "model": "GPT-6 Astra",
+      "input": "未核实",
+      "output": "未核实",
+      "cache": "—",
+      "effectiveDate": "—",
+      "source": "—",
+      "verified": false
+    },
+    {
+      "vendor": "Google",
+      "model": "Gemini 3.8 Flash",
+      "input": "沿用 3.7",
+      "output": "沿用 3.7",
+      "cache": "—",
+      "effectiveDate": "2026-09-02",
+      "source": "BestBlogs",
+      "verified": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "DeepSeek",
+      "url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://platform.openai.com/docs/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Google Gemini",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Moonshot Kimi",
+      "url": "https://platform.moonshot.cn/docs/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Zhipu GLM",
+      "url": "https://open.bigmodel.cn/pricing",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "MiniMax",
+      "url": "https://platform.minimaxi.com/document/Price",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Volcengine Doubao",
+      "url": "https://www.volcengine.com/docs/82379/1099320",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    },
+    {
+      "name": "Tencent Hunyuan",
+      "url": "https://cloud.tencent.com/document/product/1729/97731",
+      "fetchedAt": "2026-09-08 14:01 CST",
+      "status": "ok",
+      "snippets": []
+    }
+  ]
+}
