@@ -65,6 +65,9 @@ PAGE = """<!DOCTYPE html>
   <h2>📰 日报归档</h2>
   {reports}
 
+  <h2>🔄 近期价格变动</h2>
+  {changes}
+
   <h2>💰 国内模型价格（人民币）</h2>
   <table><thead><tr><th>厂商</th><th>模型</th><th class="num">输入价</th><th class="num">输出价</th><th class="num">缓存命中</th><th>生效日期</th><th>信源</th></tr></thead>
   <tbody>{domestic}</tbody></table>
@@ -111,12 +114,27 @@ def reports_html() -> str:
     )
 
 
+def changes_html(items: list[dict]) -> str:
+    if not items:
+        return '<div class="card"><span class="date">近期无记录的价格变动</span></div>'
+    return "".join(
+        '<div class="card"><div><b>{v}</b> · {c} <span class="date">{d}</span><br>'
+        '<span style="font-size:14px">{detail}</span><br>'
+        '<span class="date">来源：{s}</span></div></div>'.format(
+            v=esc(c.get("vendor")), c=esc(c.get("change")), d=esc(c.get("date")),
+            detail=esc(c.get("detail")), s=esc(c.get("source")),
+        )
+        for c in items
+    )
+
+
 def main() -> None:
     data = json.loads(DATA_FILE.read_text(encoding="utf-8")) if DATA_FILE.exists() else {}
     DIST.mkdir(parents=True, exist_ok=True)
     html = PAGE.format(
         updated=esc(data.get("updatedAt") or datetime.now(CST).strftime("%Y-%m-%d %H:%M CST")),
         reports=reports_html(),
+        changes=changes_html(data.get("changes", [])),
         domestic=rows(data.get("domestic", [])),
         international=rows(data.get("international", [])),
     )
