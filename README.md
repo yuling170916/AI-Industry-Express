@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="docs/images/banner.jpg" alt="AI 行业速递" width="100%">
-
 # AI 行业速递
 
 **每日 AI 行业中文日报 + 国内外大模型 API 价格看板**
