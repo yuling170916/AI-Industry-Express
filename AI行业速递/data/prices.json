@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12 08:04 CST",
+  "updatedAt": "2026-09-12 11:37 CST",
   "note": "价格单位：人民币/美元 每百万 tokens。DeepSeek 为峰谷定价，高峰时段为北京时间工作日 9-12 点、14-18 点，闲时半价。",
   "changes": [
     {
@@ -172,63 +172,63 @@
     {
       "name": "DeepSeek",
       "url": "https://api-docs.deepseek.com/quick_start/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "OpenAI",
       "url": "https://platform.openai.com/docs/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Anthropic",
       "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Google Gemini",
       "url": "https://ai.google.dev/gemini-api/docs/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Moonshot Kimi",
       "url": "https://platform.moonshot.cn/docs/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Zhipu GLM",
       "url": "https://open.bigmodel.cn/pricing",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "MiniMax",
       "url": "https://platform.minimaxi.com/document/Price",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Volcengine Doubao",
       "url": "https://www.volcengine.com/docs/82379/1099320",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     },
     {
       "name": "Tencent Hunyuan",
       "url": "https://cloud.tencent.com/document/product/1729/97731",
-      "fetchedAt": "2026-09-12 08:04 CST",
+      "fetchedAt": "2026-09-12 11:37 CST",
       "status": "ok",
       "snippets": []
     }
